@@ -44,6 +44,10 @@ header .sub { color: #666; font-size: 13px; margin-top: 6px; }
 .card-link { color: #ff2442; font-size: 13px; font-weight: 600; text-decoration: none; white-space: nowrap; margin-left: 12px; }
 .card-link:hover { text-decoration: underline; }
 .card-link.disabled { color: #333; cursor: default; }
+.card-actions { display: flex; gap: 6px; margin-left: 12px; }
+.app-link { color: #4ecdc4 !important; }
+.copy-btn { background: none; border: 1px solid #333; color: #888; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 12px; font-family: inherit; }
+.copy-btn:hover { border-color: #ff2442; color: #ff2442; }
 
 /* 品牌标签 */
 .brands { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
@@ -69,7 +73,7 @@ footer a { color: #ff2442; text-decoration: none; }
 
 <header>
   <h1>⚡ 粉扑雷达</h1>
-  <div class="sub">小红书实时监控 · AI 视觉驱动 · 2026-07-20 19:18:43</div>
+  <div class="sub">小红书实时监控 · AI 视觉驱动 · 2026-07-20 19:21:16</div>
 </header>
 
 <div class="stats">
@@ -104,7 +108,11 @@ footer a { color: #ff2442; text-decoration: none; }
       <span class="time">2026-07-20</span>
     </div>
   </div>
-  <a class='card-link' href='https://www.xiaohongshu.com/search_result/6a37dd6d0000000007021cb9?xsec_token=ABzpcQBC8Jw23y6CmJYnFDVYV9bUWHtQoxy84MECiYM44=&xsec_source=' target='_blank' rel='noopener'>查看原帖 →</a>
+  <div class="card-actions">
+    <a class="card-link" href="https://www.xiaohongshu.com/search_result/6a37dd6d0000000007021cb9?xsec_token=ABzpcQBC8Jw23y6CmJYnFDVYV9bUWHtQoxy84MECiYM44=&xsec_source=" target="_blank" rel="noopener">🌐 网页</a>
+    <a class="card-link app-link" href="xhsdiscover://explore/6a37dd6d0000000007021cb9">📱 App</a>
+    <button class="card-link copy-btn" onclick="navigator.clipboard.writeText('https://www.xiaohongshu.com/search_result/6a37dd6d0000000007021cb9?xsec_token=ABzpcQBC8Jw23y6CmJYnFDVYV9bUWHtQoxy84MECiYM44=&xsec_source=').then(()=>this.textContent='✅ 已复制')">📋 复制</button>
+  </div>
 </div>
 <div class="card">
   <div class="card-body">
@@ -115,7 +123,11 @@ footer a { color: #ff2442; text-decoration: none; }
       <span class="time">2026-07-20</span>
     </div>
   </div>
-  <a class='card-link' href='https://www.xiaohongshu.com/search_result/6a474ccf00000000220147d0?xsec_token=ABHi5VpFQx1SpeqJhEoltuFwIB6AfHNG8kpKO-v6dP2yI=&xsec_source=' target='_blank' rel='noopener'>查看原帖 →</a>
+  <div class="card-actions">
+    <a class="card-link" href="https://www.xiaohongshu.com/search_result/6a474ccf00000000220147d0?xsec_token=ABHi5VpFQx1SpeqJhEoltuFwIB6AfHNG8kpKO-v6dP2yI=&xsec_source=" target="_blank" rel="noopener">🌐 网页</a>
+    <a class="card-link app-link" href="xhsdiscover://explore/6a474ccf00000000220147d0">📱 App</a>
+    <button class="card-link copy-btn" onclick="navigator.clipboard.writeText('https://www.xiaohongshu.com/search_result/6a474ccf00000000220147d0?xsec_token=ABHi5VpFQx1SpeqJhEoltuFwIB6AfHNG8kpKO-v6dP2yI=&xsec_source=').then(()=>this.textContent='✅ 已复制')">📋 复制</button>
+  </div>
 </div>
 <div class="card">
   <div class="card-body">
@@ -126,7 +138,11 @@ footer a { color: #ff2442; text-decoration: none; }
       <span class="time">2026-07-20</span>
     </div>
   </div>
-  <a class='card-link' href='https://www.xiaohongshu.com/search_result/6a412b78000000002003b612?xsec_token=ABxd7BDUY89y7ggISSC2auCP43QYVVyRV8T_VFF8YiUvE=&xsec_source=' target='_blank' rel='noopener'>查看原帖 →</a>
+  <div class="card-actions">
+    <a class="card-link" href="https://www.xiaohongshu.com/search_result/6a412b78000000002003b612?xsec_token=ABxd7BDUY89y7ggISSC2auCP43QYVVyRV8T_VFF8YiUvE=&xsec_source=" target="_blank" rel="noopener">🌐 网页</a>
+    <a class="card-link app-link" href="xhsdiscover://explore/6a412b78000000002003b612">📱 App</a>
+    <button class="card-link copy-btn" onclick="navigator.clipboard.writeText('https://www.xiaohongshu.com/search_result/6a412b78000000002003b612?xsec_token=ABxd7BDUY89y7ggISSC2auCP43QYVVyRV8T_VFF8YiUvE=&xsec_source=').then(()=>this.textContent='✅ 已复制')">📋 复制</button>
+  </div>
 </div>
 <div class="card">
   <div class="card-body">
@@ -137,7 +153,11 @@ footer a { color: #ff2442; text-decoration: none; }
       <span class="time">2026-07-20</span>
     </div>
   </div>
-  <a class='card-link' href='https://www.xiaohongshu.com/search_result/6a5dd21c0000000001001c36?xsec_token=ABG9gmYJwhqZ_7zCgu6_OQansRcTc5S04qQyZwgfCYVHw=&xsec_source=' target='_blank' rel='noopener'>查看原帖 →</a>
+  <div class="card-actions">
+    <a class="card-link" href="https://www.xiaohongshu.com/search_result/6a5dd21c0000000001001c36?xsec_token=ABG9gmYJwhqZ_7zCgu6_OQansRcTc5S04qQyZwgfCYVHw=&xsec_source=" target="_blank" rel="noopener">🌐 网页</a>
+    <a class="card-link app-link" href="xhsdiscover://explore/6a5dd21c0000000001001c36">📱 App</a>
+    <button class="card-link copy-btn" onclick="navigator.clipboard.writeText('https://www.xiaohongshu.com/search_result/6a5dd21c0000000001001c36?xsec_token=ABG9gmYJwhqZ_7zCgu6_OQansRcTc5S04qQyZwgfCYVHw=&xsec_source=').then(()=>this.textContent='✅ 已复制')">📋 复制</button>
+  </div>
 </div>
 <div class="card">
   <div class="card-body">
@@ -148,7 +168,11 @@ footer a { color: #ff2442; text-decoration: none; }
       <span class="time">2026-07-20</span>
     </div>
   </div>
-  <a class='card-link' href='https://www.xiaohongshu.com/search_result/6a3fa5b2000000000702f17e?xsec_token=ABN48431-4fFIKv1aTmT7nvNSwpN3iiYpj0O72AmiAUHc=&xsec_source=' target='_blank' rel='noopener'>查看原帖 →</a>
+  <div class="card-actions">
+    <a class="card-link" href="https://www.xiaohongshu.com/search_result/6a3fa5b2000000000702f17e?xsec_token=ABN48431-4fFIKv1aTmT7nvNSwpN3iiYpj0O72AmiAUHc=&xsec_source=" target="_blank" rel="noopener">🌐 网页</a>
+    <a class="card-link app-link" href="xhsdiscover://explore/6a3fa5b2000000000702f17e">📱 App</a>
+    <button class="card-link copy-btn" onclick="navigator.clipboard.writeText('https://www.xiaohongshu.com/search_result/6a3fa5b2000000000702f17e?xsec_token=ABN48431-4fFIKv1aTmT7nvNSwpN3iiYpj0O72AmiAUHc=&xsec_source=').then(()=>this.textContent='✅ 已复制')">📋 复制</button>
+  </div>
 </div>
 <div class="card">
   <div class="card-body">
@@ -159,7 +183,11 @@ footer a { color: #ff2442; text-decoration: none; }
       <span class="time">2026-07-20</span>
     </div>
   </div>
-  <a class='card-link' href='https://www.xiaohongshu.com/search_result/6a408cfa000000000f0166ed?xsec_token=AB8uU0l40Lh0QsHhq5BqIWsO85Jcv9asnx3eJ6tyAVW5Q=&xsec_source=' target='_blank' rel='noopener'>查看原帖 →</a>
+  <div class="card-actions">
+    <a class="card-link" href="https://www.xiaohongshu.com/search_result/6a408cfa000000000f0166ed?xsec_token=AB8uU0l40Lh0QsHhq5BqIWsO85Jcv9asnx3eJ6tyAVW5Q=&xsec_source=" target="_blank" rel="noopener">🌐 网页</a>
+    <a class="card-link app-link" href="xhsdiscover://explore/6a408cfa000000000f0166ed">📱 App</a>
+    <button class="card-link copy-btn" onclick="navigator.clipboard.writeText('https://www.xiaohongshu.com/search_result/6a408cfa000000000f0166ed?xsec_token=AB8uU0l40Lh0QsHhq5BqIWsO85Jcv9asnx3eJ6tyAVW5Q=&xsec_source=').then(()=>this.textContent='✅ 已复制')">📋 复制</button>
+  </div>
 </div>
 <div class="card">
   <div class="card-body">
@@ -170,7 +198,11 @@ footer a { color: #ff2442; text-decoration: none; }
       <span class="time">2026-07-20</span>
     </div>
   </div>
-  <a class='card-link' href='https://www.xiaohongshu.com/search_result/6a20071d0000000035027ef8?xsec_token=ABoEmPY_p6vp2b5UZDLSxIUS-RyRn0sM9toxQHdulMPc0=&xsec_source=' target='_blank' rel='noopener'>查看原帖 →</a>
+  <div class="card-actions">
+    <a class="card-link" href="https://www.xiaohongshu.com/search_result/6a20071d0000000035027ef8?xsec_token=ABoEmPY_p6vp2b5UZDLSxIUS-RyRn0sM9toxQHdulMPc0=&xsec_source=" target="_blank" rel="noopener">🌐 网页</a>
+    <a class="card-link app-link" href="xhsdiscover://explore/6a20071d0000000035027ef8">📱 App</a>
+    <button class="card-link copy-btn" onclick="navigator.clipboard.writeText('https://www.xiaohongshu.com/search_result/6a20071d0000000035027ef8?xsec_token=ABoEmPY_p6vp2b5UZDLSxIUS-RyRn0sM9toxQHdulMPc0=&xsec_source=').then(()=>this.textContent='✅ 已复制')">📋 复制</button>
+  </div>
 </div>
 <div class="card">
   <div class="card-body">
@@ -181,7 +213,11 @@ footer a { color: #ff2442; text-decoration: none; }
       <span class="time">2026-07-20</span>
     </div>
   </div>
-  <a class='card-link' href='https://www.xiaohongshu.com/search_result/6a58665a000000000100d023?xsec_token=ABnfzg73t5wFYTOw3qd9G-5wJBknIWIvwbICDmFsGf6Y0=&xsec_source=' target='_blank' rel='noopener'>查看原帖 →</a>
+  <div class="card-actions">
+    <a class="card-link" href="https://www.xiaohongshu.com/search_result/6a58665a000000000100d023?xsec_token=ABnfzg73t5wFYTOw3qd9G-5wJBknIWIvwbICDmFsGf6Y0=&xsec_source=" target="_blank" rel="noopener">🌐 网页</a>
+    <a class="card-link app-link" href="xhsdiscover://explore/6a58665a000000000100d023">📱 App</a>
+    <button class="card-link copy-btn" onclick="navigator.clipboard.writeText('https://www.xiaohongshu.com/search_result/6a58665a000000000100d023?xsec_token=ABnfzg73t5wFYTOw3qd9G-5wJBknIWIvwbICDmFsGf6Y0=&xsec_source=').then(()=>this.textContent='✅ 已复制')">📋 复制</button>
+  </div>
 </div>
 <div class="card">
   <div class="card-body">
@@ -192,7 +228,11 @@ footer a { color: #ff2442; text-decoration: none; }
       <span class="time">2026-07-20</span>
     </div>
   </div>
-  <a class='card-link' href='https://www.xiaohongshu.com/search_result/6a40000b000000001003f577?xsec_token=AB8uU0l40Lh0QsHhq5BqIWsLyw2RdGpYOoc1Daz5GaZlE=&xsec_source=' target='_blank' rel='noopener'>查看原帖 →</a>
+  <div class="card-actions">
+    <a class="card-link" href="https://www.xiaohongshu.com/search_result/6a40000b000000001003f577?xsec_token=AB8uU0l40Lh0QsHhq5BqIWsLyw2RdGpYOoc1Daz5GaZlE=&xsec_source=" target="_blank" rel="noopener">🌐 网页</a>
+    <a class="card-link app-link" href="xhsdiscover://explore/6a40000b000000001003f577">📱 App</a>
+    <button class="card-link copy-btn" onclick="navigator.clipboard.writeText('https://www.xiaohongshu.com/search_result/6a40000b000000001003f577?xsec_token=AB8uU0l40Lh0QsHhq5BqIWsLyw2RdGpYOoc1Daz5GaZlE=&xsec_source=').then(()=>this.textContent='✅ 已复制')">📋 复制</button>
+  </div>
 </div>
 <div class="card">
   <div class="card-body">
@@ -203,7 +243,11 @@ footer a { color: #ff2442; text-decoration: none; }
       <span class="time">2026-07-20</span>
     </div>
   </div>
-  <a class='card-link' href='https://www.xiaohongshu.com/search_result/6a1d483f000000003600159b?xsec_token=ABEhvBbjhE_3bFXeLaeWIMSrnM5BBpYpWRFc2bmq_xsl8=&xsec_source=' target='_blank' rel='noopener'>查看原帖 →</a>
+  <div class="card-actions">
+    <a class="card-link" href="https://www.xiaohongshu.com/search_result/6a1d483f000000003600159b?xsec_token=ABEhvBbjhE_3bFXeLaeWIMSrnM5BBpYpWRFc2bmq_xsl8=&xsec_source=" target="_blank" rel="noopener">🌐 网页</a>
+    <a class="card-link app-link" href="xhsdiscover://explore/6a1d483f000000003600159b">📱 App</a>
+    <button class="card-link copy-btn" onclick="navigator.clipboard.writeText('https://www.xiaohongshu.com/search_result/6a1d483f000000003600159b?xsec_token=ABEhvBbjhE_3bFXeLaeWIMSrnM5BBpYpWRFc2bmq_xsl8=&xsec_source=').then(()=>this.textContent='✅ 已复制')">📋 复制</button>
+  </div>
 </div>
 <div class="card">
   <div class="card-body">
@@ -214,7 +258,11 @@ footer a { color: #ff2442; text-decoration: none; }
       <span class="time">2026-07-20</span>
     </div>
   </div>
-  <a class='card-link' href='https://www.xiaohongshu.com/search_result/6a5b4f24000000000f02976b?xsec_token=AB4wdfZ4PxzLPssjJIiicpf9gcbrMj0xxHavemTTwxVbU=&xsec_source=' target='_blank' rel='noopener'>查看原帖 →</a>
+  <div class="card-actions">
+    <a class="card-link" href="https://www.xiaohongshu.com/search_result/6a5b4f24000000000f02976b?xsec_token=AB4wdfZ4PxzLPssjJIiicpf9gcbrMj0xxHavemTTwxVbU=&xsec_source=" target="_blank" rel="noopener">🌐 网页</a>
+    <a class="card-link app-link" href="xhsdiscover://explore/6a5b4f24000000000f02976b">📱 App</a>
+    <button class="card-link copy-btn" onclick="navigator.clipboard.writeText('https://www.xiaohongshu.com/search_result/6a5b4f24000000000f02976b?xsec_token=AB4wdfZ4PxzLPssjJIiicpf9gcbrMj0xxHavemTTwxVbU=&xsec_source=').then(()=>this.textContent='✅ 已复制')">📋 复制</button>
+  </div>
 </div>
 <div class="card">
   <div class="card-body">
@@ -225,7 +273,11 @@ footer a { color: #ff2442; text-decoration: none; }
       <span class="time">2026-07-20</span>
     </div>
   </div>
-  <a class='card-link' href='https://www.xiaohongshu.com/search_result/6a426dbd000000002100bd0b?xsec_token=ABb0cGEXwBY3cUgt2hX4xlvjC5jzEhytVeNCu4lEfYjLA=&xsec_source=' target='_blank' rel='noopener'>查看原帖 →</a>
+  <div class="card-actions">
+    <a class="card-link" href="https://www.xiaohongshu.com/search_result/6a426dbd000000002100bd0b?xsec_token=ABb0cGEXwBY3cUgt2hX4xlvjC5jzEhytVeNCu4lEfYjLA=&xsec_source=" target="_blank" rel="noopener">🌐 网页</a>
+    <a class="card-link app-link" href="xhsdiscover://explore/6a426dbd000000002100bd0b">📱 App</a>
+    <button class="card-link copy-btn" onclick="navigator.clipboard.writeText('https://www.xiaohongshu.com/search_result/6a426dbd000000002100bd0b?xsec_token=ABb0cGEXwBY3cUgt2hX4xlvjC5jzEhytVeNCu4lEfYjLA=&xsec_source=').then(()=>this.textContent='✅ 已复制')">📋 复制</button>
+  </div>
 </div>
   </div>
 </div>
@@ -241,7 +293,11 @@ footer a { color: #ff2442; text-decoration: none; }
       <span class="time">2026-07-20</span>
     </div>
   </div>
-  <a class='card-link' href='https://www.xiaohongshu.com/search_result/6a426dbd000000002100bd0b?xsec_token=ABb0cGEXwBY3cUgt2hX4xlvjC5jzEhytVeNCu4lEfYjLA=&xsec_source=' target='_blank' rel='noopener'>查看原帖 →</a>
+  <div class="card-actions">
+    <a class="card-link" href="https://www.xiaohongshu.com/search_result/6a426dbd000000002100bd0b?xsec_token=ABb0cGEXwBY3cUgt2hX4xlvjC5jzEhytVeNCu4lEfYjLA=&xsec_source=" target="_blank" rel="noopener">🌐 网页</a>
+    <a class="card-link app-link" href="xhsdiscover://explore/6a426dbd000000002100bd0b">📱 App</a>
+    <button class="card-link copy-btn" onclick="navigator.clipboard.writeText('https://www.xiaohongshu.com/search_result/6a426dbd000000002100bd0b?xsec_token=ABb0cGEXwBY3cUgt2hX4xlvjC5jzEhytVeNCu4lEfYjLA=&xsec_source=').then(()=>this.textContent='✅ 已复制')">📋 复制</button>
+  </div>
 </div>
 <div class="card">
   <div class="card-body">
@@ -252,7 +308,11 @@ footer a { color: #ff2442; text-decoration: none; }
       <span class="time">2026-07-20</span>
     </div>
   </div>
-  <a class='card-link' href='https://www.xiaohongshu.com/search_result/6a1d483f000000003600159b?xsec_token=ABEhvBbjhE_3bFXeLaeWIMSrnM5BBpYpWRFc2bmq_xsl8=&xsec_source=' target='_blank' rel='noopener'>查看原帖 →</a>
+  <div class="card-actions">
+    <a class="card-link" href="https://www.xiaohongshu.com/search_result/6a1d483f000000003600159b?xsec_token=ABEhvBbjhE_3bFXeLaeWIMSrnM5BBpYpWRFc2bmq_xsl8=&xsec_source=" target="_blank" rel="noopener">🌐 网页</a>
+    <a class="card-link app-link" href="xhsdiscover://explore/6a1d483f000000003600159b">📱 App</a>
+    <button class="card-link copy-btn" onclick="navigator.clipboard.writeText('https://www.xiaohongshu.com/search_result/6a1d483f000000003600159b?xsec_token=ABEhvBbjhE_3bFXeLaeWIMSrnM5BBpYpWRFc2bmq_xsl8=&xsec_source=').then(()=>this.textContent='✅ 已复制')">📋 复制</button>
+  </div>
 </div>
   </div>
 </div>
